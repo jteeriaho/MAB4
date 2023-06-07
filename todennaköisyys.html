@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Geometrinen jono &#8212; MAB_kertausta</title>
+    <title>Todennäköisyys &#8212; MAB_kertausta</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -54,8 +54,6 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Koronkorko" href="koronkorkolaskut.html" />
-    <link rel="prev" title="Aritmeettinen jono" href="aritmeettinen_jono.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -152,14 +150,14 @@ const thebe_selector_output = ".output, .cell_output"
   MAB7 lisää kauppamatikkaa
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="aritmeettinen_jono.html">
    Aritmeettinen jono
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="geometrinen_jono.html">
    Geometrinen jono
   </a>
  </li>
@@ -169,7 +167,7 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="pitkaaikaiset_lainat.html">
+  <a class="reference internal" href="pitk%C3%A4aikaiset_lainat.html">
    Pitkäaikaiset lainat
   </a>
  </li>
@@ -210,16 +208,6 @@ const thebe_selector_output = ".output, .cell_output"
    Eksponenttimalli
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="yhtaloparit.html">
-   Yhtälöparit
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="verrannollisuus.html">
-   Verrannollisuus
-  </a>
- </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -228,22 +216,17 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="todennakoisyys.html">
-   Todennäköisyys
-  </a>
- </li>
- <li class="toctree-l1">
   <a class="reference internal" href="tuloperiaate.html">
    Tuloperiaate
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="kertolaskusaanto.html">
+  <a class="reference internal" href="kertolaskus%C3%A4%C3%A4nt%C3%B6.html">
    Kertolaskusääntö
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="yhteenlaskusaanto.html">
+  <a class="reference internal" href="yhteenlaskus%C3%A4%C3%A4nt%C3%B6.html">
    Yhteenlaskusääntö
   </a>
  </li>
@@ -254,7 +237,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="regressio_ja_korrelaatio.html">
-   Regressioanalyysi
+   Regressio ja korrelaatio
   </a>
  </li>
 </ul>
@@ -316,7 +299,7 @@ title="Toggle navigation"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://mybinder.org/v2/gh/jteeriaho/MAB.git/main?urlpath=tree/geometrinen_jono.ipynb"
+        <a href="https://mybinder.org/v2/gh/jteeriaho/MAB.git/main?urlpath=tree/todennaköisyys.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -376,7 +359,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/jteeriaho/MAB.git/issues/new?title=Issue%20on%20page%20%2Fgeometrinen_jono.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/jteeriaho/MAB.git/issues/new?title=Issue%20on%20page%20%2Ftodennaköisyys.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -404,7 +387,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/geometrinen_jono.ipynb"
+        <a href="_sources/todennaköisyys.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -464,41 +447,43 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#prosentin-maaritelma">
-   Prosentin määritelmä
+  <a class="reference internal nav-link" href="#tilastolliset-muuttujat">
+   Tilastolliset muuttujat
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#prosenttiosuuden-laskeminen-montako-prosenttia-a-on-b-sta">
-     Prosenttiosuuden laskeminen:  Montako prosenttia a on b:stä?
+    <a class="reference internal nav-link" href="#diskreetin-muuttujan-arvojen-jakauman-esittaminen">
+     Diskreetin muuttujan arvojen jakauman esittäminen
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#paljonko-on-p-prosenttia-a-sta">
-     Paljonko on p prosenttia a:sta?
+    <a class="reference internal nav-link" href="#tilastollisia-tunnuslukuja">
+     Tilastollisia tunnuslukuja
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#montako-prosenttia-a-on-suurempi-kuin-b">
-     Montako prosenttia a on suurempi kuin b?
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#montako-prosenttia-a-on-pienempi-kuin-b">
-     Montako prosenttia a on pienempi kuin b?
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#perusarvon-laskeminen">
-     Perusarvon laskeminen
+    <a class="reference internal nav-link" href="#tilastolliset-tunnusluvut-excelissa">
+     Tilastolliset tunnusluvut Excelissä
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#perattaiset-prosenttikorotukset-lisayskerroin">
-   Perättäiset prosenttikorotukset, lisäyskerroin
+  <a class="reference internal nav-link" href="#jatkuvan-muuttujan-esittaminen-ja-tunnusluvut">
+   Jatkuvan muuttujan esittäminen ja tunnusluvut
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#jatkuvan-muuttujan-tunnusluvuista">
+     Jatkuvan muuttujan tunnusluvuista
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#otantakeskihajonta-ja-populaatiokeskihajonta">
+     Otantakeskihajonta ja populaatiokeskihajonta
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -509,7 +494,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Geometrinen jono</h1>
+                <h1>Todennäköisyys</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -520,41 +505,43 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#prosentin-maaritelma">
-   Prosentin määritelmä
+  <a class="reference internal nav-link" href="#tilastolliset-muuttujat">
+   Tilastolliset muuttujat
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#prosenttiosuuden-laskeminen-montako-prosenttia-a-on-b-sta">
-     Prosenttiosuuden laskeminen:  Montako prosenttia a on b:stä?
+    <a class="reference internal nav-link" href="#diskreetin-muuttujan-arvojen-jakauman-esittaminen">
+     Diskreetin muuttujan arvojen jakauman esittäminen
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#paljonko-on-p-prosenttia-a-sta">
-     Paljonko on p prosenttia a:sta?
+    <a class="reference internal nav-link" href="#tilastollisia-tunnuslukuja">
+     Tilastollisia tunnuslukuja
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#montako-prosenttia-a-on-suurempi-kuin-b">
-     Montako prosenttia a on suurempi kuin b?
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#montako-prosenttia-a-on-pienempi-kuin-b">
-     Montako prosenttia a on pienempi kuin b?
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#perusarvon-laskeminen">
-     Perusarvon laskeminen
+    <a class="reference internal nav-link" href="#tilastolliset-tunnusluvut-excelissa">
+     Tilastolliset tunnusluvut Excelissä
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#perattaiset-prosenttikorotukset-lisayskerroin">
-   Perättäiset prosenttikorotukset, lisäyskerroin
+  <a class="reference internal nav-link" href="#jatkuvan-muuttujan-esittaminen-ja-tunnusluvut">
+   Jatkuvan muuttujan esittäminen ja tunnusluvut
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#jatkuvan-muuttujan-tunnusluvuista">
+     Jatkuvan muuttujan tunnusluvuista
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#otantakeskihajonta-ja-populaatiokeskihajonta">
+     Otantakeskihajonta ja populaatiokeskihajonta
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -566,85 +553,203 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="geometrinen-jono">
-<h1>Geometrinen jono<a class="headerlink" href="#geometrinen-jono" title="Permalink to this headline">#</a></h1>
-<section id="prosentin-maaritelma">
-<h2>Prosentin määritelmä<a class="headerlink" href="#prosentin-maaritelma" title="Permalink to this headline">#</a></h2>
+  <section class="tex2jax_ignore mathjax_ignore" id="todennakoisyys">
+<h1>Todennäköisyys<a class="headerlink" href="#todennakoisyys" title="Permalink to this headline">#</a></h1>
+<section id="tilastolliset-muuttujat">
+<h2>Tilastolliset muuttujat<a class="headerlink" href="#tilastolliset-muuttujat" title="Permalink to this headline">#</a></h2>
+<p>Tilastotutkimoksen kohderyhmää kutsutaan tilasto-opissa <strong>populaatioksi</strong></p>
+<p>Suuresta populaatiosta otetaan usen satunnaisvalinnalla <strong>otos</strong>, johon tutkimus kohdistetaan.</p>
+<p>Tilastotutkimuksissa mitattavia ominaisuuksia ja suureita sanotaan <strong>tilastomuuttujiksi</strong>.</p>
+<p>Muuttujat voivat olla <strong>numeerisia</strong> tai <strong>luokkamuuttujia</strong></p>
+<blockquote>
+<div><p>Jos numeerisen muuttujan mahdolliset arvot voidaan luetella, muuttujaa sanotaan <strong>diskreetiksi</strong></p>
+<p>Jos numeerisen muuttujan kahden arvon välissä voi olla ääretön määrä arvoja, muuttuja on <strong>jatkuva</strong></p>
+</div></blockquote>
+<section id="diskreetin-muuttujan-arvojen-jakauman-esittaminen">
+<h3>Diskreetin muuttujan arvojen jakauman esittäminen<a class="headerlink" href="#diskreetin-muuttujan-arvojen-jakauman-esittaminen" title="Permalink to this headline">#</a></h3>
+<p>Tavanomaisia diskreetin jakauman esitystapoja ovat <strong>frekvenssitaulu</strong> ja <strong>pylväskaavio</strong></p>
+<div class="dropdown admonition">
+<p class="admonition-title">Esim. Kokeeseen, jonka maksimipistemäärä oli 20, osallistui 28 opiskelijaa. Kokeen arvosanat olivat 19,11,16,12,7,11,10,15,7,11,17,9,7,14,14,13,8,16,12,19,8,12,14,5,16,18,13 ja 11. Laadi arvosanajakaumasta frekvenssitaulu ja pylväskaavio.      </p>
+<p><strong>Frekvenssitaulu</strong></p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>pisteet</p></th>
+<th class="head"><p>lkm</p></th>
+<th class="head"><p>pisteet</p></th>
+<th class="head"><p>lkm</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>1</p></td>
+<td><p>13</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-odd"><td><p>7</p></td>
+<td><p>3</p></td>
+<td><p>14</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-even"><td><p>8</p></td>
+<td><p>2</p></td>
+<td><p>15</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>9</p></td>
+<td><p>2</p></td>
+<td><p>16</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-even"><td><p>10</p></td>
+<td><p>1</p></td>
+<td><p>17</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>11</p></td>
+<td><p>4</p></td>
+<td><p>18</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>12</p></td>
+<td><p>3</p></td>
+<td><p>19</p></td>
+<td><p>2</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Pylväskaavio</strong></p>
+<p><img alt="pylvas" src="images/kuva43.PNG" /></p>
+</div>
+</section>
+<section id="tilastollisia-tunnuslukuja">
+<h3>Tilastollisia tunnuslukuja<a class="headerlink" href="#tilastollisia-tunnuslukuja" title="Permalink to this headline">#</a></h3>
+<p>Muuttujan arvojen jakaumaa voidaan kuvata myös <strong>tilastollisilla tunnusluvuilla</strong>.</p>
+<p><strong>Keskiluvut</strong> pyrkivät kuvaamaan muuttujan keskimääräistä tai tyypillistä arvoa. Keskilukuja ovat <em>keskiarvo, mediaani ja tyyppiarvo</em></p>
+<p><strong>Hajontaluvut</strong> kuvaavat arvojen jakautumista ja hajontaa. Hajontalukuja ovat <em>varianssi, keskihajonta, ylä- ja alaneljännes, sekä prosenttipiste</em>.</p>
 <div class="tip admonition">
-<p class="admonition-title">Prosentin määritelmä</p>
-<p>Prosentti tarkoittaa sadasosaa. Se voidaan esittää myös murtolukuna ja desimaalilukuna.</p>
-<p>1% = <span class="math notranslate nohighlight">\(\frac {1}{100} = 0.01\)</span></p>
+<p class="admonition-title"><strong>Keskiarvon ja keskihajonnan kaavat</strong></p>
+<p>keskiarvo:      <span class="math notranslate nohighlight">\(\hspace{1cm}\mu=\frac{x_1+x_2+...+x_n}{n}=\frac{\sum x_i}{n}\)</span></p>
+<p>keskihajonta:   <span class="math notranslate nohighlight">\(\hspace{5mm}\sigma=\sqrt{\frac{\sum (x_i-\mu)^2}{n}}\)</span>   <em>(ns. populaatiokeskihajonta)</em></p>
+<p><span class="math notranslate nohighlight">\(x_1, x_2,...\)</span>  ovat muuttujan arvot, n = arvojen lukumäärä</p>
 </div>
-<section id="prosenttiosuuden-laskeminen-montako-prosenttia-a-on-b-sta">
-<h3>Prosenttiosuuden laskeminen:  Montako prosenttia a on b:stä?<a class="headerlink" href="#prosenttiosuuden-laskeminen-montako-prosenttia-a-on-b-sta" title="Permalink to this headline">#</a></h3>
-<p>Lukua a sanotaan usein <em>vertailuarvoksi</em> ja lukua b <em>perusarvoksi.</em></p>
-<p>Ratkaisu:  <span class="math notranslate nohighlight">\(p =\frac {a}{b}\cdot 100\%\)</span></p>
-<div class="dropdown admonition">
-<p class="admonition-title">Poliisi puhallutti 240 autoilijaa, joilla 7:llä oli alkoholia veressä. Monellako prosentilla puhallutetuista oli alkoholia veressä? </p>
-<p><span class="math notranslate nohighlight">\(p =\frac {7}{240}\cdot 100\% = 2.9\%\)</span></p>
-<p>Vastaus: 2.9 prosentilla oli alkoholia veressä</p>
-</div>
+<p><em>Mediaani</em> on lukujoukon keskimmäinen luku: puolet joukon luvuista on pienempiä ja puolet suurempia kuin mediaani</p>
+<p><em>Tyyppiarvo</em> eli <em>moodi</em> on muuttujan arvo, jonka frekvenssi on suurin</p>
+<p><em>Prosenttipiste</em>, jonka parametrina on prosenttiluku p ilmoittaa muuttujan arvon, jonka alapuolelle jää p prosenttia arvoista</p>
+<p><em>Ylä- ja alaneljännes</em> ovat prosenttipisteen erikoistapauksia vastaten prosenttiarvoja 75 ja 25.</p>
+<p><em>P90-arvo</em> on mm. rakennusten sisäilmamittauksissa käytetty viitearvo, joka tarkoittaa prosenttipistettä, kun p = 90.</p>
 </section>
-<section id="paljonko-on-p-prosenttia-a-sta">
-<h3>Paljonko on p prosenttia a:sta?<a class="headerlink" href="#paljonko-on-p-prosenttia-a-sta" title="Permalink to this headline">#</a></h3>
-<p>Ratkaisu:  <span class="math notranslate nohighlight">\(\frac {p}{100}\cdot a\)</span></p>
-<div class="dropdown admonition">
-<p class="admonition-title">Puseron hinta oli 39.80.  Myyjä antoi siitä 35% alennuksen. Mikä oli alennettu hinta?</p>
-<p>Alennus oli <span class="math notranslate nohighlight">\(\frac {35}{100}\cdot 39.80 = 13.93\)</span><br />
-Alennettu hinta on siten 39.80 -13.93 = 25.87.</p>
-</div>
-</section>
-<section id="montako-prosenttia-a-on-suurempi-kuin-b">
-<h3>Montako prosenttia a on suurempi kuin b?<a class="headerlink" href="#montako-prosenttia-a-on-suurempi-kuin-b" title="Permalink to this headline">#</a></h3>
-<p>Tässä vertailuarvona on lukujen erotus ja perusarvona luku b. Ratkaisu: <span class="math notranslate nohighlight">\(\frac {a-b}{b}\cdot100\%\)</span></p>
-<div class="dropdown admonition">
-<p class="admonition-title">Ruotsalaisten keskipalkka on 3680 Eur/kk ja suomalaisten 3570 Eur/kk. Kuinka monta prosenttia ruotsalaisten keskipalkka on suurempi kuin suomalaisten?</p>
-<p><span class="math notranslate nohighlight">\(\frac {3680-3570}{3570}\cdot100\% = 3.1\%\)</span></p>
-<p>Vastaus:  3.1%</p>
-</div>
-</section>
-<section id="montako-prosenttia-a-on-pienempi-kuin-b">
-<h3>Montako prosenttia a on pienempi kuin b?<a class="headerlink" href="#montako-prosenttia-a-on-pienempi-kuin-b" title="Permalink to this headline">#</a></h3>
-<p>Vertailuarvona on lukujen erotus ja perusarvona luku b. Ratkaisu: <span class="math notranslate nohighlight">\(\frac {b-a}{b}\cdot100\%\)</span></p>
-<div class="dropdown admonition">
-<p class="admonition-title">Prismassa Valion arkijuusto maksaa 5.95, kun sen hinta K-marketissa on 6.35. Kuinka monta prosenttia vähemmän juusto maksaa Prismassa verrattuna K-marketiin?</p>
-<p><span class="math notranslate nohighlight">\(\frac {6.35-5.95}{6.35}\cdot100\% = 6.3\%\)</span></p>
-<p>Vastaus:  6.3%</p>
-</div>
-</section>
-<section id="perusarvon-laskeminen">
-<h3>Perusarvon laskeminen<a class="headerlink" href="#perusarvon-laskeminen" title="Permalink to this headline">#</a></h3>
-<p>Yhtälöstä <span class="math notranslate nohighlight">\(\frac {a}{b}=\frac {p}{100}\)</span> ratkaistuna</p>
-<p>perusarvo <span class="math notranslate nohighlight">\(b=\frac {a}{p/100}=\frac{a}{p}\cdot 100\)</span></p>
-<div class="dropdown admonition">
-<p class="admonition-title">Maijalle kevään 2.5% palkankorotus toi lisää palkkaa 45 Euroa kk:ssa. Mikä oli Maijan kuukausipalkka ennen korotusta?</p>
-<p><span class="math notranslate nohighlight">\(\frac {45}{x} = \frac{2.5}{100} =&gt; x = \frac{45}{2.5}\cdot100 = 1800 \)</span></p>
-<p>Vastaus:  1800 Euroa</p>
-</div>
-</section>
-</section>
-<section id="perattaiset-prosenttikorotukset-lisayskerroin">
-<h2>Perättäiset prosenttikorotukset, lisäyskerroin<a class="headerlink" href="#perattaiset-prosenttikorotukset-lisayskerroin" title="Permalink to this headline">#</a></h2>
-<p>Esim. Jos 2500 euron palkkaa korotetaan 3.5 prosenttia, on kätevintä laskea uusi palkka käyttämällä ns. <strong>lisäyskerrointa</strong>  1.035.</p>
-<p>Uusi palkka on <span class="math notranslate nohighlight">\(1.035\cdot2500\)</span> = 2587.50.</p>
+<section id="tilastolliset-tunnusluvut-excelissa">
+<h3>Tilastolliset tunnusluvut Excelissä<a class="headerlink" href="#tilastolliset-tunnusluvut-excelissa" title="Permalink to this headline">#</a></h3>
 <div class="tip admonition">
-<p class="admonition-title">Lisäyskerroin</p>
-<p>Lisäyskerroin eli korkotekijä</p>
-<p>r = <span class="math notranslate nohighlight">\(1 + \frac {p}{100}\)</span></p>
+<p class="admonition-title">Excelissä on funktiot kaikille em. tilastollisille tunnusluvuille. Alkuperäiset muuttujan arvot kannattaa kirjoittaa samaan sarakkeeseen tai samalle riville. Jos aiemman esimerkin koetulokset kirjoitetaan solualueelle <span class="math notranslate nohighlight">\(A1:A28\)</span>, voidaan tunnusluvut laskea Excel-funktioilla ao. taulukon mukaisesti </p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>tunnusluku</p></th>
+<th class="text-align:left head"><p>suom.Excel</p></th>
+<th class="text-align:left head"><p>engl.Excel</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>keskiarvo</p></td>
+<td class="text-align:left"><p>=keskiarvo(A1:A28)</p></td>
+<td class="text-align:left"><p>=average(A1:A28)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>keskihajonta</p></td>
+<td class="text-align:left"><p>=keskihajonta.p(A1:A28)</p></td>
+<td class="text-align:left"><p>=stdev.p(A1:A28)</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>mediaani</p></td>
+<td class="text-align:left"><p>=mediaani(A1:A28)</p></td>
+<td class="text-align:left"><p>=median(A1:A28)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>tyyppiarvo</p></td>
+<td class="text-align:left"><p>=moodi(A1:A28)</p></td>
+<td class="text-align:left"><p>=mode(A1:A28)</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>yläneljännes</p></td>
+<td class="text-align:left"><p>=neljännes(A1:A28;3)</p></td>
+<td class="text-align:left"><p>=quartile(A1:A28;3)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>alaneljännes</p></td>
+<td class="text-align:left"><p>=neljännes(A1:A28;1)</p></td>
+<td class="text-align:left"><p>=quartile(A1:A28;1)</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>P90- arvo</p></td>
+<td class="text-align:left"><p>=prosenttipiste(A1:A28;90%)</p></td>
+<td class="text-align:left"><p>=percentile(A1:A28;90%)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>suurin arvo</p></td>
+<td class="text-align:left"><p>=suurin(A1:A28)</p></td>
+<td class="text-align:left"><p>=max(A1:A28)</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>pienin arvo</p></td>
+<td class="text-align:left"><p>=pienin(A1:A28)</p></td>
+<td class="text-align:left"><p>=min(A1:A28)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>lukumäärä</p></td>
+<td class="text-align:left"><p>=laske(A1:A28)</p></td>
+<td class="text-align:left"><p>=count(A1:A28)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="jatkuvan-muuttujan-esittaminen-ja-tunnusluvut">
+<h2>Jatkuvan muuttujan esittäminen ja tunnusluvut<a class="headerlink" href="#jatkuvan-muuttujan-esittaminen-ja-tunnusluvut" title="Permalink to this headline">#</a></h2>
+<p>Muuttuja on <strong>jatkuva</strong>, kun mahdollisia arvoja on ääretön tai hyvin suuri määrä. Tällöin muuttujan eri arvojen frekvensseistä muodostettava frekvenssitaulukko ja siitä laadittu pylväskaavio eivät ole mielekkäitä esitystapoja analyysin kannalta.</p>
+<p>Ratkaisu ongelmaan on aineiston luokittelu.</p>
+<div class="tip admonition">
+<p class="admonition-title"><strong>Muuttujan arvojen luokittelusta</strong></p>
+<ol class="simple">
+<li><p>Sopiva luokkien määrä on 5 - 16, enintään <span class="math notranslate nohighlight">\(\sqrt{n}\)</span> , missä n on havaintojen lukumäärä</p></li>
+<li><p>Luokkien alarajojen tulisi olla mielellään pyöreitä lukuja</p></li>
+<li><p>Luokan ylärajan tulisi olla mittaustarkkuuden verran seuraavan luokan alarajan alapuolella</p></li>
+<li><p>Pienimmän muuttujan arvon tulee sijaita alimmassa luokassa, suurimman arvon ylimmässä</p></li>
+</ol>
+</div>
+<p>Esim.  Alla on 30 koehenkilön reaktioajan mittaustulokset. Reaktioajat on luokiteltu viiteen tasaväliseen luokkaan ja jakauma on esitetty pylväskaaviona.</p>
+<p><img alt="luokat" src="images/kuva44.PNG" /></p>
+<section id="jatkuvan-muuttujan-tunnusluvuista">
+<h3>Jatkuvan muuttujan tunnusluvuista<a class="headerlink" href="#jatkuvan-muuttujan-tunnusluvuista" title="Permalink to this headline">#</a></h3>
+<p>A. Mikäli alkuperäinen data on kokonaisuudessaan tallessa sähköisessä muodossa, voidaan se siirtää Exceliin, ja laskea Excelin tilastofunktioita käyttäen tunnuslukujen tarkat arvot.</p>
+<p>Reaktioaikaesimerkissä saadaan tunnusluvuille seuraavat arvot:</p>
+<blockquote>
+<div><p>keskiarvo 861.2<br />
+keskihajonta 153.0<br />
+mediaani   891<br />
+alaneljännes 718<br />
+yläneljännes 1008<br />
+P90 prosenttipiste 1061</p>
+</div></blockquote>
+<p>B. Usein alkuperäinen data ei ole käytettävissä, joten tunnusluvut on pyrittävä määrittämään luokitellun aineiston perusteella.</p>
+<div class="tip admonition">
+<p class="admonition-title"><strong>Keskiarvon ja keskihajonnan laskeminen luokitellusta aineistosta</strong></p>
+<p>keskiarvo:      <span class="math notranslate nohighlight">\(\hspace{1cm}\mu=\frac{\sum f_ix_i}{n}\)</span></p>
+<p>keskihajonta:   <span class="math notranslate nohighlight">\(\hspace{5mm}\sigma=\sqrt{\frac{\sum f_i(x_i-\mu)^2}{n}}\)</span></p>
+<p>missä <span class="math notranslate nohighlight">\(x_i\)</span>  ja <span class="math notranslate nohighlight">\(f_i\)</span> on luokan i luokkakeskus ja frekvenssi, n = arvojen kokonaismäärä</p>
 </div>
 <div class="dropdown admonition">
-<p class="admonition-title">Maijan palkkaa korotettiin sopimuskaudella kolme kertaa. Korotukset olivat 3.0%, 2.5% ja 1.5%. Kuinka paljon Maijan palkka nousi yhteensä sopimuskaudella?</p>
-<p>Koko sopimuskauden lisäyskerroin on korotuksia vastaavien lisäyskertoimien tulo.
-<span class="math notranslate nohighlight">\(1.03\cdot1.025\cdot1.015 = 1.0716\)</span><br />
-Tämä vastaan n. 7.2% palkankorotusta</p>
-<p>Vastaus:  7.2%</p>
+<p class="admonition-title">Määritä esimerkin reaktioaikojen keskiarvo luokitellusta aineistosta</p>
+<p>keskiarvo:  <span class="math notranslate nohighlight">\(\mu=\frac{5\cdot 650+7\cdot 750+4\cdot 850+6\cdot 950+8\cdot 1050}{30}=870\)</span></p>
+<p>keskihajonta: <span class="math notranslate nohighlight">\(\sigma=\sqrt{\frac{5\cdot (650-870)^2 + 7\cdot (750-870)^2+...+ 8\cdot (1050-870)^2}{30}} = 146\)</span></p>
+<p>Ero alkuperäisestä datasta laskettuihin tarkkoihin arvoihin 861.2 ja 153.0 on pieni.</p>
 </div>
-<div class="dropdown admonition">
-<p class="admonition-title">Kiinteistön arvo v.2010 oli 125000 euroa. Mikä oli kiinteistön arvo v.2018, jos oletetaan että arvo nousi tuolla aikavälillä 2.5% vuodessa? </p>
-<p>Vuotuinen lisäyskerroin on 1.025. Arvo 8 vuotta vertailuvuoden 2010 jälkeen on</p>
-<p><span class="math notranslate nohighlight">\(125000\cdot1.025^8 = 152300\)</span></p>
-<p>Vastaus:  152300 euroa</p>
+</section>
+<section id="otantakeskihajonta-ja-populaatiokeskihajonta">
+<h3>Otantakeskihajonta ja populaatiokeskihajonta<a class="headerlink" href="#otantakeskihajonta-ja-populaatiokeskihajonta" title="Permalink to this headline">#</a></h3>
+<p><strong>Kokonaistutkimuksessa</strong> mitataan muuttujan arvo koko populaatiosta.<br />
+<strong>Otantatutkimuksessa</strong> valitaan jotain otantamenetelmää käyttäen populaatiosta osajoukko, jota sanotaan <strong>otokseksi</strong> <em>(sample)</em>.</p>
+<p>Otoksesta lasketut tunnusluvut poikkeavat sitä enemmän populaation tunnusluvuista, mitä pienempi on <strong>otoskoko</strong> <em>(sample size)</em></p>
+<p>Keskihajonta lasketaan hieman eri kaavalla riippuen siitä, onko kyseessä kokonaistutkimus vai otantatutkimus.<br />
+Niistä käytetään termejä <em>populaatiokeskihajonta</em> ja <em>otoskeskihajonta</em>.</p>
+<p>Suurilla otoskoon arvoilla kaavojen antamien arvojen ero on erittäin pieni.</p>
+<div class="tip admonition">
+<p class="admonition-title"><strong>Otoskeskihajonta ja populaatiokeskihajonta</strong></p>
+<p>populaatiokeskihajonta:   <span class="math notranslate nohighlight">\(\sigma=\sqrt{\frac{\sum (x_i-\mu)^2}{n}}\)</span></p>
+<p>otoskeskihajonta:   <span class="math notranslate nohighlight">\(\hspace{10mm}s=\sqrt{\frac{\sum (x_i-\mu)^2}{n-1}}\)</span></p>
 </div>
+</section>
 </section>
 </section>
 
@@ -675,20 +780,6 @@ Tämä vastaan n. 7.2% palkankorotusta</p>
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="aritmeettinen_jono.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Aritmeettinen jono</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="koronkorkolaskut.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Koronkorko</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
 </div>
             </footer>
         </div>
