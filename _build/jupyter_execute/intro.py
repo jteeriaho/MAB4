@@ -11,6 +11,7 @@
 # 5. Potenssiyhtälöt        
 # 6. Eksponenttiyhtälöt       
 # 7. Verrannollisuus      
-# 8. Yhtälöparit    
+# 8. Yhtälöparit      
 # 
+# <a href="kertaustehtavia.pdf"> Laskutehtaväkokoelma </a> 
 # 

@@ -107,3 +107,5 @@
 # 
 # ![huippu](images/huippu.PNG)
 # ```
+
+# Linkki: <a href="kertaustehtavia.pdf"> Laskutehtaväkokoelma </a>

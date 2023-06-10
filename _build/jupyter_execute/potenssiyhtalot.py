@@ -65,3 +65,5 @@
 # Parittoman juuren saa ottaa myös negatiivisesta luvusta. Miinusmerkin saa siirtää juuren etupuolelle.
 # ```
 # ````
+
+# Linkki: <a href="kertaustehtavia.pdf"> Laskutehtaväkokoelma </a>

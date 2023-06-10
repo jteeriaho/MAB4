@@ -14,7 +14,6 @@ parts:
     - file: eksponenttiyhtalo
     - file: yhtaloparit
     - file: verrannollisuus
-    - file: kertaustehtavia
 
 
    

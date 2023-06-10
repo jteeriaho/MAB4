@@ -140,3 +140,5 @@
 # Jos D < 0,  yhtälöllä ei ole reaalisia ratkaisuja    
 # Jos D = 0,  yhtälöllä on yksi reaalinen ratkaisu 
 # ```
+
+# Linkki: <a href="kertaustehtavia.pdf"> Laskutehtaväkokoelma </a>
